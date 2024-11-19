@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/formatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/format"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/costTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/cost"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toEndOf="@+id/formatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <CheckBox
+        android:id="@+id/a4CheckBox"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/a4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formatTextView" />
+
+    <CheckBox
+        android:id="@+id/a3CheckBox"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/a3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a4CheckBox" />
+
+    <CheckBox
+        android:id="@+id/a1CheckBox"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/a1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a3CheckBox" />
+
+    <TextView
+        android:id="@+id/a4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/a4_price"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a4CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/costTextView" />
+
+    <TextView
+        android:id="@+id/a3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/a3_price"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/a3CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/a4TextView" />
+
+    <TextView
+        android:id="@+id/a1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/a1_price"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/a1CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/a3TextView" />
+
+    <TextView
+        android:id="@+id/pageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/page_count"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a1CheckBox" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:hint="@string/default_count"
+        android:inputType="numberDecimal"
+        android:labelFor="@+id/pageTextView"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/a1TextView" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:text="@string/calculate_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
