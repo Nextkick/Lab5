@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Заказ на печать</string>
+    <string name="format">Формат</string>
+    <string name="cost">Стоимость</string>
+    <string name="a4">А4</string>
+    <string name="a3">А3</string>
+    <string name="a1">А1</string>
+    <string name="a4_price">10 руб./стр.</string>
+    <string name="a3_price">30 руб./стр.</string>
+    <string name="a1_price">100 руб./стр.</string>
+    <string name="page_count">Количество страниц:</string>
+    <string name="calculate_button">Посчитать</string>
+    <string name="default_count">0</string>
+
+    <string name="result">%1$s %2$d %3$s</string>
+    <string name="order_amount">Сумма заказа: </string>
+    <string name="number">%1$d</string>
+    <string name="rubles">руб.</string>
+    <string name="back_button">Назад</string>
+</resources>
