@@ -16,9 +16,9 @@ class PriceActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_price)
 
-        val isCheckedA4 = intent.getBooleanExtra("a4CheckBox", false)
-        val isCheckedA3 = intent.getBooleanExtra("a3CheckBox", false)
-        val isCheckedA1 = intent.getBooleanExtra("a1CheckBox", false)
+        val isCheckedA4 = intent.getBooleanExtra("a4RadioButton", false)
+        val isCheckedA3 = intent.getBooleanExtra("a3RadioButton", false)
+        val isCheckedA1 = intent.getBooleanExtra("a1RadioButton", false)
         val countValueString = intent.getStringExtra("countPages")
 
 
